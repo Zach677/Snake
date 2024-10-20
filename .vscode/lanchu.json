@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build in Xcode",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "/Users/star/xcode.rb",
+      "cwd": "${workspaceFolder}",
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
