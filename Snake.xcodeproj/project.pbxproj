@@ -3,26 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8B9BC8B2CC504730011EEDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B9BC852CC504730011EEDF /* Preview Assets.xcassets */; };
-		F8B9BC8C2CC504730011EEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B9BC872CC504730011EEDF /* Assets.xcassets */; };
-		F8B9BC8D2CC504730011EEDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9BC882CC504730011EEDF /* ContentView.swift */; };
-		F8B9BC8E2CC504730011EEDF /* SnakeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9BC892CC504730011EEDF /* SnakeApp.swift */; };
-		F8B9BC942CC50AF00011EEDF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9BC932CC50AF00011EEDF /* GameView.swift */; };
 		F8B9BC972CC5139C0011EEDF /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = F8B9BC962CC5139C0011EEDF /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8B9BC622CC503CF0011EEDF /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8B9BC852CC504730011EEDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F8B9BC872CC504730011EEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F8B9BC882CC504730011EEDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F8B9BC892CC504730011EEDF /* SnakeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeApp.swift; sourceTree = "<group>"; };
-		F8B9BC932CC50AF00011EEDF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F82183462CC5363900B86A4F /* Snake */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Snake; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F8B9BC5F2CC503CF0011EEDF /* Frameworks */ = {
@@ -39,7 +33,7 @@
 		F8B9BC592CC503CF0011EEDF = {
 			isa = PBXGroup;
 			children = (
-				F8B9BC8A2CC504730011EEDF /* Snake */,
+				F82183462CC5363900B86A4F /* Snake */,
 				F8B9BC632CC503CF0011EEDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,26 +44,6 @@
 				F8B9BC622CC503CF0011EEDF /* Snake.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F8B9BC862CC504730011EEDF /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F8B9BC852CC504730011EEDF /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F8B9BC8A2CC504730011EEDF /* Snake */ = {
-			isa = PBXGroup;
-			children = (
-				F8B9BC862CC504730011EEDF /* Preview Content */,
-				F8B9BC872CC504730011EEDF /* Assets.xcassets */,
-				F8B9BC932CC50AF00011EEDF /* GameView.swift */,
-				F8B9BC882CC504730011EEDF /* ContentView.swift */,
-				F8B9BC892CC504730011EEDF /* SnakeApp.swift */,
-			);
-			path = Snake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +60,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F82183462CC5363900B86A4F /* Snake */,
 			);
 			name = Snake;
 			packageProductDependencies = (
@@ -137,8 +114,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B9BC8B2CC504730011EEDF /* Preview Assets.xcassets in Resources */,
-				F8B9BC8C2CC504730011EEDF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +124,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B9BC8D2CC504730011EEDF /* ContentView.swift in Sources */,
-				F8B9BC942CC50AF00011EEDF /* GameView.swift in Sources */,
-				F8B9BC8E2CC504730011EEDF /* SnakeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
