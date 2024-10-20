@@ -5,7 +5,7 @@
       "name": "Build in Xcode",
       "type": "node-terminal",
       "request": "launch",
-      "command": "/Users/star/xcode.rb",
+      "command": "/Users/star/Downloads/xcode.rb", // use a better folder path
       "cwd": "${workspaceFolder}",
       "presentation": {
         "reveal": "never",

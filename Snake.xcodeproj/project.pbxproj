@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -111,6 +111,7 @@
 				};
 			};
 			buildConfigurationList = F8B9BC5D2CC503CF0011EEDF /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -122,7 +123,6 @@
 			packageReferences = (
 				F8B9BC952CC5139C0011EEDF /* XCRemoteSwiftPackageReference "Inject" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = F8B9BC632CC503CF0011EEDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
