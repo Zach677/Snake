@@ -94,7 +94,7 @@ class GameViewModel: ObservableObject {
 				return snake.dropFirst().contains(position)
 		}
 		
-		private func endGame() {
+		func endGame() {
 				isGameRunning = false
 				timer?.cancel()
 		}
@@ -119,4 +119,3 @@ enum Direction {
 				}
 		}
 }
-

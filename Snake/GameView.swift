@@ -64,14 +64,27 @@ struct GameView: View {
                     }
                 }))
             
-            Button(action: {
-                gameViewModel.startGame()
-            }) {
-                Text(gameViewModel.isGameRunning ? "Restart" : "Start")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            HStack {
+                Button(action: {
+                    gameViewModel.startGame()
+                }) {
+                    Text(gameViewModel.isGameRunning ? "Restart" : "Start")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
+                Button(action: {
+                    gameViewModel.endGame()
+                }) {
+                    Text("End Game")
+                        .padding()
+                        .background(Color.pink)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .disabled(!gameViewModel.isGameRunning)
             }
             .padding()
         }
