@@ -1,13 +1,17 @@
+import ColorfulX
 import Inject
 import SwiftUI
 
 struct GameView: View {
   @ObserveInjection var inject
   @StateObject private var gameViewModel = GameViewModel()
+  @State private var colors: [Color] = ColorfulPreset.winter.colors.map { Color($0) }
 
   var body: some View {
     ZStack {
-      Color(UIColor.systemBackground).edgesIgnoringSafeArea(.all)
+      ColorfulView(color: $colors)
+        .opacity(0.25)
+        .ignoresSafeArea()
 
       VStack(spacing: 20) {
         scoreBoard

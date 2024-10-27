@@ -1,6 +1,24 @@
 {
-  "originHash" : "854e288d98f610136659a608597076475e59cd144d7f2033a2f471ab5dad0950",
+  "originHash" : "ba2dc1c7a285ad3d5b164410b1829006251672e85fdb3be5f974d1b2d14545f8",
   "pins" : [
+    {
+      "identity" : "colorfulx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/ColorfulX.git",
+      "state" : {
+        "revision" : "36b7d5c750fd512d9f2344423b05b8a0ed63e6fc",
+        "version" : "5.5.2"
+      }
+    },
+    {
+      "identity" : "colorvector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/ColorVector.git",
+      "state" : {
+        "revision" : "031ce6ce65c0b347fb192302aa8ec4a17cc1494f",
+        "version" : "1.0.3"
+      }
+    },
     {
       "identity" : "inject",
       "kind" : "remoteSourceControl",
@@ -8,6 +26,24 @@
       "state" : {
         "revision" : "728c56639ecb3df441d51d5bc6747329afabcfc9",
         "version" : "1.5.2"
+      }
+    },
+    {
+      "identity" : "msdisplaylink",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/MSDisplayLink.git",
+      "state" : {
+        "revision" : "c2fcd28cb99300d83acc30860ce252ef97c20b61",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "springinterpolation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/SpringInterpolation.git",
+      "state" : {
+        "revision" : "ff526fec3ef6df62395141a0cc55a4ba2d82ee81",
+        "version" : "1.2.2"
       }
     }
   ],
