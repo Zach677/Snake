@@ -5,6 +5,7 @@ struct SettingView: View {
   @ObserveInjection var inject
   @AppStorage("boardSize") private var boardSize: Int = 15
   @AppStorage("gameSpeed") private var gameSpeed: Double = 0.5
+  @EnvironmentObject private var gameViewModel: GameViewModel
 
   var body: some View {
     Form {
@@ -26,17 +27,12 @@ struct SettingView: View {
       Section {
         Button("Reset High Score") {
           UserDefaults.standard.removeObject(forKey: "HighScore")
+          gameViewModel.highScore = 0
         }
         .foregroundColor(.red)
       }
     }
     .navigationTitle("Settings")
     .enableInjection()
-  }
-}
-
-#Preview {
-  NavigationView {
-    SettingView()
   }
 }

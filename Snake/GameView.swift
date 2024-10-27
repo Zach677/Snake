@@ -4,7 +4,7 @@ import SwiftUI
 
 struct GameView: View {
   @ObserveInjection var inject
-  @StateObject private var gameViewModel = GameViewModel()
+  @EnvironmentObject private var gameViewModel: GameViewModel
   @State private var colors: [Color] = ColorfulPreset.winter.colors.map { Color($0) }
 
   var body: some View {
