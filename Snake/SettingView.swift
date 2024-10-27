@@ -8,31 +8,36 @@ struct SettingView: View {
   @EnvironmentObject private var gameViewModel: GameViewModel
 
   var body: some View {
-    Form {
-      Section("Game Settings") {
-        Stepper("Board Size: \(boardSize)x\(boardSize)", value: $boardSize, in: 10...20)
-
-        VStack(alignment: .leading) {
-          Text("Game Speed")
-          Slider(value: $gameSpeed, in: 0.1...1.0) {
-            Text("Game Speed")
-          } minimumValueLabel: {
-            Text("Fast")
-          } maximumValueLabel: {
-            Text("Slow")
+    NavigationStack {
+      List {
+        Section {
+          Button("@Zach") {
+            UIApplication.shared.open(URL(string: "https://x.com/Zach98899")!)
           }
+          Button("Buy me a coffee! ☕️") {
+            UIApplication.shared.open(URL(string: "https://github.com/sponsors/Zach677/")!)
+          }
+          Button("Feedback & Contact") {
+            UIApplication.shared.open(URL(string: "https://github.com/Zach677/Snake")!)
+          }
+        } header: {
+          Text("About")
+        } footer: {
+          Text("Wish you have a great time!")
+        }
+        Section {
+          Button("Reset High Score") {
+            gameViewModel.highScore = 0
+          }
+          .foregroundColor(.red)
+        } header: {
+          Text("Danger Zone")
+        } footer: {
+          Text("This is will reset your high score.")
         }
       }
-
-      Section {
-        Button("Reset High Score") {
-          UserDefaults.standard.removeObject(forKey: "HighScore")
-          gameViewModel.highScore = 0
-        }
-        .foregroundColor(.red)
-      }
+      .navigationTitle("Setting")
     }
-    .navigationTitle("Settings")
     .enableInjection()
   }
 }
