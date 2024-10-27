@@ -5,15 +5,15 @@
 //  Created by Star on 2024/10/20.
 //
 
-import SwiftUI
 import Inject
+import SwiftUI
 
 @main
-struct SnakeApp: App {
-    var body: some Scene {
-        WindowGroup {
-            GameView()
-                .enableInjection()
-        }
+private struct SnakeApp: SwiftUI.App {
+  var body: some Scene {
+    WindowGroup {
+      MainView()
+        .enableInjection()
     }
+  }
 }
