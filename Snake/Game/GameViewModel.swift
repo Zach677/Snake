@@ -71,13 +71,13 @@ class GameViewModel: ObservableObject {
     var newPosition = position
     switch direction {
     case .up:
-      newPosition.y = (newPosition.y - 1 + boardSize) % boardSize
+      newPosition.y -= 1
     case .down:
-      newPosition.y = (newPosition.y + 1) % boardSize
+      newPosition.y += 1
     case .left:
-      newPosition.x = (newPosition.x - 1 + boardSize) % boardSize
+      newPosition.x -= 1
     case .right:
-      newPosition.x = (newPosition.x + 1) % boardSize
+      newPosition.x += 1
     }
     return newPosition
   }
@@ -93,7 +93,9 @@ class GameViewModel: ObservableObject {
   }
 
   private func isCollision(position: Position) -> Bool {
-    return snake.dropFirst().contains(position)
+    return snake.dropFirst().contains(position) || 
+           position.x < 0 || position.x >= boardSize || 
+           position.y < 0 || position.y >= boardSize
   }
 
   private func updateScore() {
