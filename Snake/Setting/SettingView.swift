@@ -3,8 +3,6 @@ import SwiftUI
 
 struct SettingView: View {
   @ObserveInjection var inject
-  @AppStorage("boardSize") private var boardSize: Int = 15
-  @AppStorage("gameSpeed") private var gameSpeed: Double = 0.5
   @EnvironmentObject private var gameViewModel: GameViewModel
 
   var body: some View {
